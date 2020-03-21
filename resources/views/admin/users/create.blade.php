@@ -5,7 +5,7 @@
 
     <h2>Create a User</h2>
 
-    {!!  Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store', 'files'=>true]) !!}
+    {!!  Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store','file'=>true]) !!}
 
         <div class="form-group">
             {!! Form::label('name', 'Name:') !!}

@@ -29,7 +29,7 @@ class AddPhotoIdToUsers extends Migration
         Schema::table('users', function (Blueprint $table) {
             //
 
-            $table->drop('photo_id');
+            $table->dropColumn('photo_id');
         });
     }
 }
