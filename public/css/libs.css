@@ -8724,5 +8724,7 @@ table.dataTable thead .sorting:after {
 .toppad
 {margin-top:20px;
 }
-
+.dropdown-user{
+    height: auto;
+}
 /*# sourceMappingURL=libs.css.map */
