@@ -26,7 +26,7 @@
                 <tr>
                     <td>{{$post->id}}</td>
                     <td>{{$post->user->name}}</td>
-                    <td>{{$post->cat_id}}</td>
+                    <td>{{$post->category ? $post->category->name : "No Category"}}</td>
                     <td><img height="50" src="{{$post->photo ? $post->photo->file:'/images/placeholder_posts.png' }}" alt=""></td>
                     <td>{{$post->title}}</td>
                     <td>{{str_limit($post->body, 20)}}</td>

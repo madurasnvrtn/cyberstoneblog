@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f63c4d3-c259-4408-862a-7bbbd2a0e766" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/includes/form_error.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/posts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +130,7 @@
       <workItem from="1584852319857" duration="21642000" />
       <workItem from="1584880946571" duration="2155000" />
       <workItem from="1584883858457" duration="1485000" />
-      <workItem from="1584885417569" duration="6124000" />
+      <workItem from="1584885417569" duration="7343000" />
     </task>
     <servers />
   </component>
@@ -182,9 +178,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="412" y="352" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1584891715571" />
-    <state x="495" y="117" width="672" height="678" key="search.everywhere.popup" timestamp="1584892061475">
+    <state x="495" y="117" width="672" height="678" key="search.everywhere.popup" timestamp="1584893217329">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="495" y="117" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1584892061475" />
+    <state x="495" y="117" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1584893217329" />
   </component>
 </project>
