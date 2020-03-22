@@ -2,18 +2,16 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Http\Requests\UsersRequest;
 use App\Http\Requests\UsersEditRequest;
+use App\Http\Requests\UsersRequest;
 use App\Photo;
 use App\Role;
 use App\User;
-
+use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Session;
 
 class AdminUsersController extends Controller
 {
@@ -24,10 +22,17 @@ class AdminUsersController extends Controller
      */
     public function index()
     {
+        //
+
 
         $users = User::all();
 
+
+
         return view('admin.users.index', compact('users'));
+
+
+
     }
 
     /**
@@ -38,9 +43,13 @@ class AdminUsersController extends Controller
     public function create()
     {
         //
-        $roles = Role::lists('name','id')->all();
+
+
+        $roles = Role::pluck('name','id')->all();
+
 
         return view('admin.users.create', compact('roles'));
+
     }
 
     /**
@@ -51,22 +60,49 @@ class AdminUsersController extends Controller
      */
     public function store(UsersRequest $request)
     {
-        $input = $request->all();
+        //
 
-        if($file = $request->file('photo')){
 
-            $name = time(). $file->getClientOriginalName();
+        if(trim($request->password) == ''){
+
+            $input = $request->except('password');
+
+        } else{
+
+
+            $input = $request->all();
+
+            $input['password'] = bcrypt($request->password);
+
+        }
+
+
+
+        if($file = $request->file('photo')) {
+
+
+            $name = time() . $file->getClientOriginalName();
+
+
             $file->move('images', $name);
 
             $photo = Photo::create(['file'=>$name]);
+
+
             $input['photo_id'] = $photo->id;
+
+
         }
-        $input['password'] = bcrypt($request->password);
+
 
         User::create($input);
 
 
         return redirect('/admin/users');
+
+
+//        return $request->all();
+
 
 
 
@@ -82,6 +118,10 @@ class AdminUsersController extends Controller
     public function show($id)
     {
         //
+
+        return view('admin.uses.show');
+
+
     }
 
     /**
@@ -95,8 +135,13 @@ class AdminUsersController extends Controller
         //
 
         $user = User::findOrFail($id);
-        $roles = Role::lists('name','id')->all();
-        return view('admin.users.edit', compact('user', 'roles'));
+
+        $roles = Role::pluck('name','id')->all();
+
+
+        return view('admin.users.edit', compact('user','roles'));
+
+
     }
 
     /**
@@ -110,30 +155,51 @@ class AdminUsersController extends Controller
     {
         //
 
-        $user = User::findORFail($id);
+        $user = User::findOrFail($id);
 
-        if(trim($request->password =="")){
+
+        if(trim($request->password) == ''){
+
             $input = $request->except('password');
-        } else {
+
+        } else{
+
+
             $input = $request->all();
+
             $input['password'] = bcrypt($request->password);
+
         }
 
-        $input = $request->all();
+
+
 
         if($file = $request->file('photo')){
-            $name = time(). $file->getClientOriginalName();
+
+
+            $name = time() . $file->getClientOriginalName();
 
             $file->move('images', $name);
 
             $photo = Photo::create(['file'=>$name]);
 
+
             $input['photo_id'] = $photo->id;
+
+
         }
+
+
 
         $user->update($input);
 
-        return redirect('admin/users');
+
+        return redirect('/admin/users');
+
+
+
+
+
     }
 
     /**
@@ -145,5 +211,24 @@ class AdminUsersController extends Controller
     public function destroy($id)
     {
         //
+
+        $user = User::findOrFail($id);
+
+
+        unlink(public_path() . $user->photo->file);
+
+
+        $user->delete();
+
+
+        Session::flash('deleted_user','The user has been deleted');
+
+
+        return redirect('/admin/users');
+
+
+
+
+
     }
 }

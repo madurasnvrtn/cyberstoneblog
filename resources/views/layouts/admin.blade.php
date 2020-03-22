@@ -49,7 +49,7 @@
 
 
         <ul class="nav navbar-top-links navbar-right">
-
+            <li>{{ Auth::user()->name }} {{ Auth::user()->role_id }}</li>
 
 
             <!-- /.dropdown -->

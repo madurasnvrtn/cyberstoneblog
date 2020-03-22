@@ -3,6 +3,15 @@
 
 @section('content')
 
+    @if(Session::has('updated_user'))
+
+        <p class="bg-blue">{{session('updated_user')}}</p>
+    @endif
+
+    @if(Session::has('deleted_user'))
+
+        <p class="bg-danger">{{session('deleted_user')}}</p>
+        @endif
 
     <table class="table">
         <thead>
