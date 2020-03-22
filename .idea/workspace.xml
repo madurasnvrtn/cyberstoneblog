@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f63c4d3-c259-4408-862a-7bbbd2a0e766" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/errors/404.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Photo.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_21_132949_add_photo_id_to_users.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_21_135805_create_photos_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_21_145741_create_photos_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +134,8 @@
       <workItem from="1584774176429" duration="72000" />
       <workItem from="1584775280183" duration="899000" />
       <workItem from="1584776888600" duration="10118000" />
-      <workItem from="1584794542688" duration="7952000" />
+      <workItem from="1584794542688" duration="27048000" />
+      <workItem from="1584852319857" duration="17045000" />
     </task>
     <servers />
   </component>
@@ -156,10 +163,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="867" height="134" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1584771948150" />
-    <state x="685" y="337" key="NewPhpFileDialog" timestamp="1584800842626">
+    <state x="685" y="337" key="NewPhpFileDialog" timestamp="1584863633221">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="685" y="337" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1584800842626" />
+    <state x="685" y="337" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1584863633221" />
     <state x="212" y="10" width="998" height="708" key="SettingsEditor" timestamp="1584790205675">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -168,9 +175,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="412" y="352" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1584790762798" />
-    <state x="513" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1584787151677">
+    <state x="513" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1584870937130">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="513" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1584787151677" />
+    <state x="513" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1584870937130" />
   </component>
 </project>
